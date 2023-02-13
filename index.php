@@ -35,7 +35,7 @@
                             <div class="dropdown">
                                 <button class="dropbtn">Admission</button>
                                 <div class="dropdown-content">
-                                    <a href="student.php">Intermediate</a>
+                                    <a href="admission.php">Intermediate</a>
                                     <a href="">degare</a>
                                     <a href="">Diploma</a>
                                 </div>
