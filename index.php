@@ -36,8 +36,8 @@
                                 <button class="dropbtn">Admission</button>
                                 <div class="dropdown-content">
                                     <a href="admission.php">Intermediate</a>
-                                    <a href="">degare</a>
-                                    <a href="">Diploma</a>
+                                    <a href="admission.php">degare</a>
+                                    <a href="admission.php">Diploma</a>
                                 </div>
                             </div>
                         </a></li>
