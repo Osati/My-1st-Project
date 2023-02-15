@@ -31,16 +31,7 @@
                                 </div>
                             </div>
                         </a></li>
-                        <li><a href="">
-                            <div class="dropdown">
-                                <button class="dropbtn">Admission</button>
-                                <div class="dropdown-content">
-                                    <a href="admission.php">Intermediate</a>
-                                    <a href="admission.php">degare</a>
-                                    <a href="admission.php">Diploma</a>
-                                </div>
-                            </div>
-                        </a></li>
+                        <li><a href="admission.php">Admission</a></li>
                         <li><a href="">
                             <div class="dropdown">
                                 <button class="dropbtn">Result</button>

@@ -38,7 +38,7 @@
         <b><label id="from"><img class="icon" src="icon/img.png"/> Your Confirm Password:</label><b></br>
         <input type="password" name="c_password" id="from" placeholder="Your Confirm Password" required></br></br>
 
-        <button name="studentadmission.php" type="submit" id="button" value="Submt">submit</button>
+        <button name="admission.php" type="submit" id="button" value="Submt">submit</button>
 
         <a href="log-in.php"><input name="back" type="button" id="button" value="Log-In">
         
