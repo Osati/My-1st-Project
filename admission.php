@@ -14,7 +14,7 @@
   <div id="container">
     <h2><center><img style="height:100px;" src="icon/regis.png"/></center>Inter Your Information</h2>
         
-    <form action="insert.php" method="POST" algin="center">
+    <form action="insert.php" method="POST" algin="center" enctype="multipart/form-data">
 
         <b><label id="from"><img class="icon" src="icon/name.png"/>First Name:</label><b></br>
         <input type="text" name="f_name" id="from" placeholder="Inter Your First Name" required></br></br>
@@ -31,14 +31,14 @@
         <input type="text" name="roll" id="from" placeholder="office Authorized" required></br></br>
         <b><label id="from"><img class="icon" src="icon/namber.png"/>Your Number:</label><b></br>
         <input type="text" name="number" id="from" placeholder="Inter Your Number" required></br></br>
-        <b><label id="from"><img class="icon" src="icon/img.png"/> Passport Image:</label><b></br>
-        <input type="text" name="image" id="from" placeholder="Give Your Photo" required></br></br>
+        <b><label id="from"><img class="icon" src="icon/img.png"/>Upload Your Passport Image:</label><b></br>
+        <input type="file" name="image" id="from" placeholder="Give Your Photo" required></br></br>
         <b><label id="from"><img class="icon" src="icon/namber.png"/>Your Password:</label><b></br>
         <input type="password" name="password" id="from" placeholder="Inter Your Password" required></br></br>
         <b><label id="from"><img class="icon" src="icon/img.png"/> Your Confirm Password:</label><b></br>
         <input type="password" name="c_password" id="from" placeholder="Your Confirm Password" required></br></br>
 
-        <button name="admission.php" type="submit" id="button" value="Submt">submit</button>
+        <button name="submit" type="submit" id="button" value="Submt">submit</button>
 
         <a href="log-in.php"><input name="back" type="button" id="button" value="Log-In">
         
