@@ -11,20 +11,21 @@
         $class = $_POST['class'];
         $roll = $_POST['roll'];
         $number = $_POST['number'];
+        $user_name = $_POST['username'];
 
         $imagename = $_FILES['image']['name'];
         $tmname = $_FILES['image']['tmp_name'];
-        $upload = 'upload/' .$image;
+        $upload_file = "upload/".$imagename;
 
 
         $password = $_POST['password'];
         $c_password = $_POST['c_password'];
 
-      $insert = "INSERT INTO student (f_name,l_name,father_name,mother_name,class,roll,number,image,password,c_password) 
-      VALUE ('$f_name','$l_name','$father_name','$mother_name','$class','$roll','$number','$imagename','$password','$c_password')";
+      $insert = "INSERT INTO student_info (f_name,l_name,father_name,mother_name,class,roll,number,image,username,password,c_password) 
+      VALUE ('$f_name','$l_name','$father_name','$mother_name','$class','$roll','$number','$imagename','$user_name','$password','$c_password')";
 
       if ($connect->query($insert) === TRUE) {
-        move_uploaded_file($tmname,$upload);
+        move_uploaded_file($tmname,$upload_file);
         echo "Insert data Success.";
       } else {
         echo "Not insert data.";

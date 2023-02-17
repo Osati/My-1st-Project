@@ -33,6 +33,8 @@
         <input type="text" name="number" id="from" placeholder="Inter Your Number" required></br></br>
         <b><label id="from"><img class="icon" src="icon/img.png"/>Upload Your Passport Image:</label><b></br>
         <input type="file" name="image" id="from" placeholder="Give Your Photo" required></br></br>
+        <b><label id="from"><img class="icon" src="icon/namber.png"/>Your User Name:</label><b></br>
+        <input type="text" name="username" id="from" placeholder="Inter Your User Name" required></br></br>
         <b><label id="from"><img class="icon" src="icon/namber.png"/>Your Password:</label><b></br>
         <input type="password" name="password" id="from" placeholder="Inter Your Password" required></br></br>
         <b><label id="from"><img class="icon" src="icon/img.png"/> Your Confirm Password:</label><b></br>
