@@ -145,8 +145,9 @@ nav .fa{
         cursor: pointer;
     }
     .nav-links lu{
-        padding: 30px;
+        margin-bottom: 5px;
     }  
+    
 }
 
 /*--- Course ----*/
@@ -364,3 +365,97 @@ h3{
 .fa-heart-o{
     color: #f44336;
 }
+
+
+/* intermediate index css style */
+
+
+.admission-table{
+    width: 100%;
+    height: auto;
+    text-overflow: ellipsis;
+    margin: 0;
+}
+.admission-table h1{
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.admission-table p{
+    text-align: center;
+    color: #fff;
+
+}
+.table-body{
+    color: #fff;
+    border: 1px solid #fff;
+    margin: auto;
+
+}
+.table-body th,td{
+    padding: 5px;
+    border: 1px solid #f1f1f1;
+
+}
+#t-header{
+    background: #eabad4;
+    opacity: 0.5;
+    color: rgb(4, 5, 4);
+}
+
+
+/* intermediate nav-link css */
+
+.inter-nav-links{
+    flex: 1;
+    text-align: right;
+}
+.inter-nav-links ul li{
+    list-style-type: none;
+    display:inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.inter-nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.inter-nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #dd4d43;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.inter-nav-links ul li:hover::after{
+    width: 100%;
+}
+
+@media(max-width:700px){
+
+    .inter-nav-links ul li{
+        display: block;
+    }
+    .inter-nav-links{
+        position: absolute;
+        background: #eabad4;
+        height:auto;
+        width: auto;
+        color: black;
+        top: 0;
+        right: -200px;
+        text-align: center;
+        border-radius: 0 0 0 10px;
+        z-index: 2;
+        transition: 1s;
+    }
+   
+    .inter-nav-links lu{
+        margin-bottom: 5px;
+    }  
+    
+}
+
