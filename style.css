@@ -459,3 +459,76 @@ h3{
     
 }
 
+/* admission php csss */
+
+.heading{
+    padding: 10px;
+    text-align:center;
+}
+#container{
+    width: 80%;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+    padding: 20px;
+    color: #fff;
+}
+.form-action1{
+    width: 50%;
+    float: left;
+
+}
+.form-action2{
+    width: 50%;
+    float: right;
+    
+}
+h2{
+    text-align: center;
+    display: block;
+    color: #fff;
+}
+
+#from{
+    width:80%;
+    height:20px ;
+    color: #fff;
+    margin:3px;
+    margin-left: 15px;
+    padding:2px;
+}
+input{
+    opacity: 0.5;
+    border-radius: 5px;
+}
+.icon {
+    width:22px;
+    height:20px;
+   
+  }
+  
+ #button{
+    width: 200px;
+    height: 40px;
+    color: #030101;
+    background-color: rgb(206, 229, 250);
+    opacity: 0.5;
+    border-radius: 20px;
+    margin: 10px;
+    font-size: large;
+  }
+
+  @media(max-width:700px){
+    #container{
+    width: 80%;
+    font-size: 12px;
+    }
+    #from{
+        width: auto;
+    }
+    #button{
+       width: 100px;
+      }
+    
+  }

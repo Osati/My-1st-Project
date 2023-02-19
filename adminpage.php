@@ -22,9 +22,9 @@
                             <div class="dropdown">
                                 <button class="dropbtn">Student_information</button>
                                 <div class="dropdown-content">
-                                    <a href="">Intermediate</a>
-                                    <a href="">degare</a>
-                                    <a href="">Diploma</a>
+                                    <a href=""><button class="intermediate">Intermediate</button></a>
+                                    <a href=""><button class="">Diploma</button></a>
+                                    <a href=""><button class="">Degree</button></a>
                                 </div>
                             </div>
                          </a>

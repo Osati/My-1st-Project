@@ -14,7 +14,7 @@
         <section class="header">
             <nav>
                 <a href="index.html"><img src="images/logo.png"></a>
-                <div class="inter-nav-links" id="navlinks">
+                <div class="nav-links" id="navlinks">
                     <i class="fa fa-times" onclick="hideMenu()"></i>
                     <ul>
                         <li>
@@ -69,37 +69,30 @@
                 <h1>Intermediate All Admission Students Information.</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi minus architecto libero sint pariatur.</p>
             <table class="table-body" id="table-body" name="">
+                <thead>
+                    <tr id="t-header" name="t-header">
+                        <th>Roll</th>
+                        <th>Name</th>
+                        <th>Father Name</th>
+                        <th>Mother Name</th>
+                        <th>Department</th>
+                        <th>Number</th>
+                        <th>Image</th>
+                        <th>User Name</th>
+                        <th>Password</th>
+                        <th>action</th>
+                        
+                    </tr>
 
-                <tr id="t-header" name="t-header">
-                    <th>Roll</th>
-                    <th>Name</th>
-                    <th>Father Name</th>
-                    <th>Mother Name</th>
-                    <th>Department</th>
-                    <th>Number</th>
-                    <th>Image</th>
-                    <th>User Name</th>
-                    <th>Password</th>
-                    <th>Update</th>
-                    <th>Delete</th>
+                    <tbody class="tbody">
 
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Md Anisur Rahman</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>                
-                    <td></td>
-                    <td></td>                
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
+                    </tbody>
+                </thead>
+                
             </table>
             </div>
         </section>
+
           <!------javascript-------->
     <script>
         var navlinks = document.getElementById("navlinks");
@@ -110,5 +103,33 @@
             navlinks.style.right="-200px";
         }
     </script>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>    
+    <script src="ajax.js"></script>
+
+    <script>
+$( document ).ready(function() {
+    $.ajax({
+        url: 'fetch.php',
+        mothod: 'post',
+        dataType: 'json',
+        success:function(data){
+            let string = '';
+            $.each(data, function(key, value){
+                string += `<tr>
+                <td>${value['user_firstName']} ${value['user_lastName']}</td>
+                <td>${value['user_email']}</td>
+                <td>${value['user_registrationDate']}</td>
+                </tr>`;
+            });
+            $('.tbody').append(string);
+        },
+        error:{
+
+        }
+    });
+});
+</script>
     </body>
 </html>
