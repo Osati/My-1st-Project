@@ -1,3 +1,8 @@
+<?php
+    require_once "config.php";
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -69,25 +74,30 @@
                 <h1>Intermediate All Admission Students Information.</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi minus architecto libero sint pariatur.</p>
             <table class="table-body" id="table-body" name="">
-                <thead>
-                    <tr id="t-header" name="t-header">
+            
                         <th>Roll</th>
                         <th>Name</th>
-                        <th>Father Name</th>
-                        <th>Mother Name</th>
                         <th>Department</th>
                         <th>Number</th>
-                        <th>Image</th>
-                        <th>User Name</th>
-                        <th>Password</th>
                         <th>action</th>
-                        
-                    </tr>
+                    
+                <?php
+                    $sql="SELECT roll, f_name, class, number from student_info";
+                   
+                    $query=mysqli_query($connect,$sql);
+                    while($info=mysqli_fetch_assoc($query)){
+                        ?>
+                        <tr>
+                            <td><?php echo $info["roll"]; ?></td>
+                            <td><?php echo $info["f_name"]; ?></td>
+                            <td><?php echo $info["class"]; ?></td>
+                            <td><?php echo $info["number"]; ?></td>
+                        </tr>
 
-                    <tbody class="tbody">
-
-                    </tbody>
-                </thead>
+                        <?php
+                    }
+                ?>
+                
                 
             </table>
             </div>

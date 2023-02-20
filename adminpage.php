@@ -22,7 +22,7 @@
                             <div class="dropdown">
                                 <button class="dropbtn">Student_information</button>
                                 <div class="dropdown-content">
-                                    <a href=""><button class="intermediate">Intermediate</button></a>
+                                    <a href="intermediate.php"><button>Intermediate</button></a>
                                     <a href=""><button class="">Diploma</button></a>
                                     <a href=""><button class="">Degree</button></a>
                                 </div>
