@@ -27,11 +27,10 @@
                         <li>
                             <a href="">
                                 <div class="dropdown">
-                                    <button class="dropbtn">Student inf</button>
+                                    <button class="dropbtn">Student info</button>
                                     <div class="dropdown-content">
-                                        <a href="diploma.php">Diploma</a>
+                                        <a href="intermediate.php">Intermediate</a>
                                         <a href="degree.php">Degree</a>
-                                        
                                     </div>
                                 </div>
                             </a>

@@ -27,11 +27,10 @@
                         <li>
                             <a href="">
                                 <div class="dropdown">
-                                    <button class="dropbtn">Student inf</button>
+                                    <button class="dropbtn">Student info</button>
                                     <div class="dropdown-content">
+                                        <a href="intermediate.php">Intermediate</a>
                                         <a href="diploma.php">Diploma</a>
-                                        <a href="degree.php">Degree</a>
-                                        
                                     </div>
                                 </div>
                             </a>
@@ -42,7 +41,7 @@
                                     <button class="dropbtn">Class info</button>
                                     <div class="dropdown-content">
                                         <a href="">Intermediate</a>
-                                        <a href="">degare</a>
+                                        <a href="">Degare</a>
                                         <a href="">Diploma</a>
                                     </div>
                                 </div>
@@ -54,7 +53,7 @@
                                     <button class="dropbtn">Result Update</button>
                                     <div class="dropdown-content">
                                         <a href="">Intermediate</a>
-                                        <a href="">degare</a>
+                                        <a href="">Degare</a>
                                         <a href="">Diploma</a>
                                     </div>
                                 </div>
@@ -96,16 +95,14 @@
                                 <td><?php echo $info["class"]; ?></td>
                                 <td><?php echo $info["number"]; ?></td>
                                 <td>
-                                    <button name="edit">update</button>
+                                    <button name="edit">Update</button>
                                     <button name="delete">Delete</button>
                                 </td>
                             </tr>
 
                             <?php
                         }
-                    ?>
-                    
-                    
+                    ?>  
                 </table>
             </div>
         </section>

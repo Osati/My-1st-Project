@@ -17,14 +17,16 @@
             <div class="nav-links" id="navlinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
+                     <li><a href="adminpage.php">Home</a></li>
+                    
                     <li>
                         <a href="">
                             <div class="dropdown">
-                                <button class="dropbtn">Student_information</button>
+                                <button class="dropbtn">Student</button>
                                 <div class="dropdown-content">
                                     <a href="intermediate.php"><button>Intermediate</button></a>
-                                    <a href=""><button class="">Diploma</button></a>
-                                    <a href=""><button class="">Degree</button></a>
+                                    <a href="diploma.php"><button>Diploma</button></a>
+                                    <a href="degree.php"><button>Degree</button></a>
                                 </div>
                             </div>
                          </a>
@@ -32,7 +34,7 @@
                     <li>
                         <a href="">
                             <div class="dropdown">
-                                <button class="dropbtn">Class_info</button>
+                                <button class="dropbtn">Class info</button>
                                 <div class="dropdown-content">
                                     <a href="">Intermediate</a>
                                     <a href="">degare</a>
@@ -44,7 +46,7 @@
                         <li><a href="#">Admission_info</a></li>
                         <li><a href="">
                             <div class="dropdown">
-                                <button class="dropbtn">Result_Update</button>
+                                <button class="dropbtn">Result</button>
                                 <div class="dropdown-content">
                                     <a href="">Intermediate</a>
                                     <a href="">degare</a>
@@ -54,7 +56,7 @@
                         </a></li>
                         <li><a href="">
                             <div class="dropdown">
-                                <button class="dropbtn">Notice_Update</button>
+                                <button class="dropbtn">Notice</button>
                                 <div class="dropdown-content">
                                     <a href="">Class</a>
                                     <a href="">Exam</a>
