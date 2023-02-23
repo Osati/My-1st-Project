@@ -387,13 +387,16 @@ h3{
 
 }
 .table-body{
-    width: 700px;
+    width:80%;
     color: #fff;
     border: 2px solid #fff;
     border-collapse: collapse;
     text-align: center;
     margin: auto;
 
+}
+.table-body tr th #action{
+    width: 20px;
 }
 .table-body th,td{
     padding: 5px;
@@ -412,6 +415,7 @@ h3{
     
 } 
 
+
 #t-header{
     background: #eabad4;
     opacity: 0.5;
@@ -429,22 +433,16 @@ h3{
 #container{
     width: 80%;
     border-radius: 25px;
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: auto;
     padding: 20px;
     color: #fff;
+    margin: auto;
 }
-.form-action1{
+
+.form-action{
     width: 50%;
     float: left;
+}
 
-}
-.form-action2{
-    width: 50%;
-    float: right;
-    
-}
 h2{
     text-align: center;
     display: block;
@@ -453,16 +451,26 @@ h2{
 
 #from{
     width:80%;
-    height:20px ;
-    color: #fff;
+    font-size: 20px;
+    color: #faf2f2;
     margin:3px;
     margin-left: 15px;
     padding:2px;
+
 }
-input{
-    opacity: 0.5;
+.form-action input{
     border-radius: 5px;
+    background: none;
+
 }
+.form-action select{
+    width:20%;
+    margin-left:15px;
+    background: none;
+    font-size: 20px;
+    padding:2px;  
+}
+
 .icon {
     width:22px;
     height:20px;
@@ -471,7 +479,7 @@ input{
   
  #button{
     width: 200px;
-    height: 40px;
+    height: 40x;
     color: #030101;
     background-color: rgb(206, 229, 250);
     opacity: 0.5;
@@ -490,6 +498,9 @@ input{
         }
         #button{
         width: 100px;
+        }
+        .form-action2{
+            float: left;   
         }
     
     }

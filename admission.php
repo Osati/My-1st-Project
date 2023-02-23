@@ -10,7 +10,7 @@
   <title>Registration</title>
   
 </head>
-<body>
+<body class="admision-body">
   <section class="header">
     <nav>
       <a href="index.html"><img src="images/logo.png"></a>
@@ -66,8 +66,8 @@
     
       <div id="container">
         <form action="insert.php" method="POST" algin="center" enctype="multipart/form-data">
-
-          <div class="form-action1">
+        
+          <div class="form-action">
             <b><label id="from"><img class="icon" src="icon/name.png"/>First Name:</label></br>
               <input type="text" name="f_name" id="from" placeholder="Inter Your First Name" required></br></br>
             <b><label id="from">Last Name:</label></br>
@@ -75,15 +75,22 @@
             <b><label id="from"><img class="icon" src="icon/name.png"/>Father Name:</label></br>
               <input type="text" name="father_name" id="from" placeholder="Inter Your Father name" required></br></br>
             <b><label id="from"><img class="icon" src="icon/name.png"/>Mother Name:</label></br>
-              <input type="text" name="mother_name" id="from" placeholder="Inter Your Mother name" required></br></br>
+              <input type="text" class="input" name="mother_name" id="from" placeholder="Inter Your Mother name" required></br></br>
               
-            <b><label id="from"><img class="icon" src="icon/class.png"/>Department:</label></br>
-              <input type="text" name="class" id="from" placeholder="Inter Your Admission class name" required></br></br>
+            <b><label id="from"><img class="icon" src="icon/name.png"/>Select Your Depart Name:</label></br>
+            <select name="class" style="font-size:20px; margin-left: 15px">
+          
+              <option value="CSE">CSE</option>
+              <option value="EEE">EEE</option>
+              <option value="CSC">CSC</option>
+          
+            </select></br></br>
+
             <b><label id="from"><img class="icon" src="icon/roll.png"/>Roll:</label></br>
               <input type="text" name="roll" id="from" placeholder="office Authorized" required></br></br>
           </div>
             
-          <div class="form-action2">    
+          <div class="form-action">    
             <b><label id="from"><img class="icon" src="icon/namber.png"/>Your Number:</label></br>
               <input type="text" name="number" id="from" placeholder="Inter Your Number" required></br></br>
             <b><label id="from"><img class="icon" src="icon/img.png"/>Upload Your Passport Image:</label></br>
@@ -100,6 +107,18 @@
         </form>
       </div>
   </section>
+
+  
+   <!-- mebu bar responsive js -->
+   <script>
+        var navlinks = document.getElementById("navlinks");
+        function showMenu(){
+            navlinks.style.right="0";
+        }
+        function hideMenu(){
+            navlinks.style.right="-200px";
+        }
+    </script>
 </body>
 </html>
 

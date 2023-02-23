@@ -47,8 +47,8 @@
                                     </div>
                                 </div>
                             </a></li>
-                            <li><a href="admission.php">Admission</a></li>
-                            <li><a href="#">Admission_info</a></li>
+                            <li><a href="ad_admision.php">Admission</a></li>
+                            <li><a href="all_ad_info.php">Admission_info</a></li>
                             <li><a href="">
                                 <div class="dropdown">
                                     <button class="dropbtn">Result Update</button>
@@ -85,7 +85,7 @@
                             <th>action</th>
                         
                     <?php
-                        $sql="SELECT roll, f_name, class, number from student_info";
+                        $sql="SELECT roll, f_name, class, number from student_info where class='intermidiate'";
                     
                         $query=mysqli_query($connect,$sql);
                         while($info=mysqli_fetch_assoc($query)){
@@ -111,6 +111,7 @@
         </section>
 
           <!------javascript-------->
+    <!-- mebu bar responsive js -->
     <script>
         var navlinks = document.getElementById("navlinks");
         function showMenu(){
