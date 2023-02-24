@@ -42,7 +42,7 @@
                                 </div>
                             </div>
                         </a></li>
-                        <li><a href="ad_admision.php">Admission</a></li>
+    
                         <li><a href="all_ad_info.php">Admission_info</a></li>
                         <li><a href="">
                             <div class="dropdown">
@@ -73,43 +73,55 @@
         <h2><center><img style="height:100px;" src="icon/regis.png"/></center>Inter Your Information</h2>
             
             
-            <div id="container">
+        <div id="container">
+        <div class="row">
+          
+          <div class="container-col"> 
             <form action="insert.php" method="POST" algin="center" enctype="multipart/form-data">
-
-                <div class="form-action1">
-                <b><label id="from"><img class="icon" src="icon/name.png"/>First Name:</label></br>
-                    <input type="text" name="f_name" id="from" placeholder="Inter Your First Name" required></br></br>
-                <b><label id="from">Last Name:</label></br>
-                    <input type="text" name="l_name" id="from" placeholder="Inter Your Last Name" required></br></br>
-                <b><label id="from"><img class="icon" src="icon/name.png"/>Father Name:</label></br>
-                    <input type="text" name="father_name" id="from" placeholder="Inter Your Father name" required></br></br>
-                <b><label id="from"><img class="icon" src="icon/name.png"/>Mother Name:</label></br>
-                    <input type="text" name="mother_name" id="from" placeholder="Inter Your Mother name" required></br></br>
-                    
-                <b><label id="from"><img class="icon" src="icon/class.png"/>Department:</label></br>
-                    <input type="text" name="class" id="from" placeholder="Inter Your Admission class name" required></br></br>
-                <b><label id="from"><img class="icon" src="icon/roll.png"/>Roll:</label></br>
-                    <input type="text" name="roll" id="from" placeholder="office Authorized" required></br></br>
-                </div>
+              <b><label id="from"><img class="icon" src="icon/name.png"/>First Name:</label></br>
+                <input type="text" name="f_name" id="from" placeholder="Inter Your First Name" required></br></br>
+              <b><label id="from">Last Name:</label></br>
+                <input type="text" name="l_name" id="from" placeholder="Inter Your Last Name" required></br></br>
+              <b><label id="from"><img class="icon" src="icon/name.png"/>Father Name:</label></br>
+                <input type="text" name="father_name" id="from" placeholder="Inter Your Father name" required></br></br>
+              <b><label id="from"><img class="icon" src="icon/name.png"/>Mother Name:</label></br>
+                <input type="text" class="input" name="mother_name" id="from" placeholder="Inter Your Mother name" required></br></br>
                 
-                <div class="form-action2">    
-                <b><label id="from"><img class="icon" src="icon/namber.png"/>Your Number:</label></br>
-                    <input type="text" name="number" id="from" placeholder="Inter Your Number" required></br></br>
-                <b><label id="from"><img class="icon" src="icon/img.png"/>Upload Your Passport Image:</label></br>
-                    <input type="file" name="image" id="from" placeholder="Give Your Photo" required></br></br>
-                <b><label id="from"><img class="icon" src="icon/namber.png"/>Your User Name:</label></br>
-                    <input type="text" name="username" id="from" placeholder="Inter Your User Name" required></br></br>
-                <b><label id="from"><img class="icon" src="icon/namber.png"/>Your Password:</label></br>
-                    <input type="password" name="password" id="from" placeholder="Inter Your Password" required></br></br>
-                <b><label id="from"><img class="icon" src="icon/img.png"/> Your Confirm Password:</label></br>
-                    <input type="password" name="c_password" id="from" placeholder="Your Confirm Password" required></br></br>
+              <b><label id="from"><img class="icon" src="icon/name.png"/>Your Depart Name:</label></br>
+                <select name="class">
+              
+                  <option value="Intermediate">Intermediate</option>
+                  <option value="Diploma">Diploma</option>
+                  <option value="Degree">Degree</option>
+              
+                </select></br></br>
 
-                <button name="submit" type="submit" id="button" value="Submt">Submit</button>
-                </div>  
+              <b><label id="from"><img class="icon" src="icon/roll.png"/>Roll:</label></br>
+                <input type="text" name="roll" id="from" placeholder="office Authorized" required></br></br>
             </form>
-            </div>
-        </section>
-        
+          </div>
+              
+          <div class="container-col"> 
+            <form action="insert.php" method="POST" algin="center" enctype="multipart/form-data">   
+              <b><label id="from"><img class="icon" src="icon/namber.png"/>Your Number:</label></br>
+                <input type="text" name="number" id="from" placeholder="Inter Your Number" required></br></br>
+              <b><label id="from"><img class="icon" src="icon/img.png"/>Upload Your Image:</label></br>
+                <input type="file" name="image" id="from" placeholder="Give Your Photo" required></br></br>
+              <b><label id="from"><img class="icon" src="icon/namber.png"/>Your User Name:</label></br>
+                <input type="text" name="username" id="from" placeholder="Inter Your User Name" required></br></br>
+              <b><label id="from"><img class="icon" src="icon/namber.png"/>Your Password:</label></br>
+                <input type="password" name="password" id="from" placeholder="Inter Your Password" required></br></br>
+              <b><label id="from"><img class="icon" src="icon/img.png"/> Your Confirm Password:</label></br>
+                <input type="password" name="c_password" id="from" placeholder="Your Confirm Password" required></br></br>
+
+              <button name="submit" type="submit" id="button" value="Submt">Submit</button>
+            </form>
+          </div>  
+        </div>  
+      </div>
+</section>
+    
+        <!-- mebu bar responsive js -->
         <script>
         var navlinks = document.getElementById("navlinks");
         function showMenu(){
