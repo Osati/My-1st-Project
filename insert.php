@@ -26,9 +26,22 @@
 
       if ($connect->query($insert) === TRUE) {
         move_uploaded_file($tmname,$upload_file);
-        echo "Insert data Success.";
+        echo "
+                <script>
+                    alert('You admission Successfully');
+                    
+                    window.location.href='index.php';
+                </script>
+            ";
+        
       } else {
-        echo "Not insert data.";
+        echo "
+                <script>
+                    alert('You Admission Not Successfully ');
+                    window.location.href='index.php';
+                </script>
+            ";
+        
       }
     }
 
