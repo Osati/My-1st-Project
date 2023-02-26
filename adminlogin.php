@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
     <title>University web-page</title>
 </head>
-<body>
+<body class="loginbody">
     <section class="header">
         <nav>
             <a href="index.html"><img src="images/logo.png"></a>
@@ -29,7 +29,7 @@
                 <input type="password" placeholder="Password" name="password" value="">
             </div>
  
-            <input class="button" type="submit" name="login" value="Sign In">
+            <input class="btn-button" type="submit" name="login" value="Sign In">
         </div>
     </form>
 </body>
