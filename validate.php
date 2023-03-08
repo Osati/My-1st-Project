@@ -1,10 +1,11 @@
 <?php
     require_once "config.php";
     
-    if(isset($_POST['login'])){
+    if(isset($_POST['submit'])){
 
     $user_name = $_POST['username'];
     $pass = $_POST['password'];
+
     
     $query= "select * from admin_login where user_name='$user_name' AND password='$pass'";
 
@@ -26,7 +27,7 @@
            echo "
                 <script>
                     alert('Your Username & Password error.');
-                    window.location.href='adminlogin.php';
+                    window.location.href='login.php';
                 </script>
             ";
         }

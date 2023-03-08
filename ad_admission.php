@@ -80,14 +80,14 @@
             <div class="container-col"> 
                 <b><label id="from"><img class="icon" src="icon/name.png"/>First Name:</label></br>
                   <input type="text" name="f_name" id="from" placeholder="Inter Your First Name" required></br></br>
-                <b><label id="from">Last Name:</label></br>
+                <b><label id="from"><img class="icon" src="icon/name.png"/>Last Name:</label></br>
                   <input type="text" name="l_name" id="from" placeholder="Inter Your Last Name" required></br></br>
                 <b><label id="from"><img class="icon" src="icon/name.png"/>Father Name:</label></br>
                   <input type="text" name="father_name" id="from" placeholder="Inter Your Father name" required></br></br>
                 <b><label id="from"><img class="icon" src="icon/name.png"/>Mother Name:</label></br>
                   <input type="text" class="input" name="mother_name" id="from" placeholder="Inter Your Mother name" required></br></br>
                   
-                <b><label id="from"><img class="icon" src="icon/name.png"/>Your Depart Name:</label></br>
+                <b><label id="from"><img class="icon" src="icon/class.png"/>Your Depart Name:</label></br>
                   <select name="class">
                 
                     <option value="Intermediate">Intermediate</option>
@@ -96,22 +96,22 @@
                 
                   </select></br></br>
 
-                <b><label id="from"><img class="icon" src="icon/roll.png"/>Roll:</label></br>
+                <b><label id="from"><img class="icon" src="icon/number.png"/>Roll:</label></br>
                   <input type="text" name="roll" id="from" placeholder="office Authorized" required></br></br>
               
             </div>
                 
             <div class="container-col"> 
                 
-                <b><label id="from"><img class="icon" src="icon/namber.png"/>Your Number:</label></br>
+                <b><label id="from"><img class="icon" src="icon/number.png"/>Your Number:</label></br>
                   <input type="text" name="number" id="from" placeholder="Inter Your Number" required></br></br>
                 <b><label id="from"><img class="icon" src="icon/img.png"/>Upload Your Image:</label></br>
                   <input type="file" name="image" id="from" placeholder="Give Your Photo" required></br></br>
-                <b><label id="from"><img class="icon" src="icon/namber.png"/>Your User Name:</label></br>
+                <b><label id="from"><img class="icon" src="icon/user.png"/>Your User Name:</label></br>
                   <input type="text" name="username" id="from" placeholder="Inter Your User Name" required></br></br>
-                <b><label id="from"><img class="icon" src="icon/namber.png"/>Your Password:</label></br>
+                <b><label id="from"><img class="icon" src="icon/show-password.png"/>Your Password:</label></br>
                   <input type="password" name="password" id="from" placeholder="Inter Your Password" required></br></br>
-                <b><label id="from"><img class="icon" src="icon/img.png"/> Your Confirm Password:</label></br>
+                <b><label id="from"><img class="icon" src="icon/show-password.png"/> Your Confirm Password:</label></br>
                   <input type="password" name="c_password" id="from" placeholder="Your Confirm Password" required></br></br>
 
                 <button name="submit" type="submit" id="button" value="Submt">Submit</button>

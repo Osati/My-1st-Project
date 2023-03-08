@@ -1,3 +1,8 @@
+<?php
+session_start();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +16,7 @@
     <title>University web-page</title>
 </head>
 <body>
+
 <section class="header">
         <nav>
             <a href="index.html"><img src="images/logo.png"></a>
@@ -66,12 +72,17 @@
                             </div>
                         </a>
                     </li>
+                    <li>
+                        <a href="logout.php">
+                            <button id="btn-loggout" name="logout">Log-out</button>
+                        </a>
+                    </li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
         <div class="text-box">
-            <h1>Dhaka International University</h1>
+            <h1 >Dhaka International University</h1>
             <p>We always try to teach trending courses. Our goal is to keep ourselves up to date in this new technology era.
             </p>
             <a href="" class="hero-btn">Visit Use to More</a>
